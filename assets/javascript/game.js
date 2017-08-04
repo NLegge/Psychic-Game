@@ -21,6 +21,11 @@ document.getElementById('remaining').innerHTML = guesses;
 	if (userGuess === computerChoice) {
 		wins++;
 		document.getElementById('winner').innerHTML = wins;
+		guesses = 9
+		document.getElementById('remaining').innerHTML = guesses;
+		letters = [];
+		document.getElementById('guess').innerHTML = letters;
+		computerChoice = alphabet[i];
 	}
 	else if (guesses === 0) {
 		losses++;
